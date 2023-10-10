@@ -1,0 +1,7 @@
+<div *ngIf="!gameOver">
+    <button *ngFor="let country of countries" (click)="onSelectCountry(country)" id="{{ country }}">{{ country }}</button>
+    <button *ngFor="let capital of capitals" (click)="onSelectCapital(capital)" id="{{ capital }}">{{ capital }}</button>
+</div>
+<div *ngIf="gameOver">
+    <p>Congratulations!</p>
+</div>
